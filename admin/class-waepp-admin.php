@@ -99,8 +99,8 @@ class Waepp_Admin {
 			}
 				?>			
 			<h2>Woocommerce admin email processing products</h2><br>
-			<p><big><b>Waepp</b></big><?php _e( ' - It is designed to improve the management of your e-commerce stock wherein the amount of produced / collected / generated /etc units are determined by the demand in the shop.' );?><br>
-							<?php _e( 'To simplify this process, this plugin allows you to receive an email with the summary of the active stock that needs to be managed.' );?><br>
+			<p><big><b>Waepp</b></big><?php _e( ' - Designed to improve the management of your e-commerce stock.' );?><br>
+							<?php _e( 'This tool allows you to receive an email with the summary of the active orders that needs to be managed.' );?><br>
 			</p>
 			<br><hr><br>
 			<form name="waepp_admin_form" method="post" action="">

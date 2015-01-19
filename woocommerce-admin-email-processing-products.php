@@ -6,8 +6,8 @@
  */
 /*
 Plugin Name: woocommerce admin email processing products
-Plugin URI: ND
-Description: email processing products to admin mail when is required
+Plugin URI: https://github.com/Myum/woocommerce-admin-email-processing-products
+Description: Sends an email with the pending orders and the amount of each item.
 Author: Marc Muixi
 Version: 1.0.0
 Author URI: http://myum.cat
@@ -51,7 +51,5 @@ function run_plugin() {
 	$plugin = new Waepp();
 	$plugin->run();
 }
-
 run_plugin();
-
 ?>

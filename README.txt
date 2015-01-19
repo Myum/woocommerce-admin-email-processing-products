@@ -8,18 +8,20 @@ Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Sends an email summarizing the commands that are on_hold and the quantity of each item
+Sends an email summarizing the orders that are on_hold and the quantity of each item
 
 == Description ==
 
-This plugin is a tool for WooCommerce ecommerce. 
+This plugin is a tool for WooCommerce eCommerce. 
 
-The plugin generates an email with all the commands that must be processed in a way. They're 
-shown in the main email inbox and they're grouped so that admin can see the amount of units 
+The plugin generates an email with all the orders that must be processed. They will be 
+shown in the main email inbox and they're grouped in a way that you would be able to see the amount of units 
 of each product that needs to bring physicaly to the store to be delivered.
 
-It provides a new way to check the on_holds commands in an easy and simple way, specially designed for 
-those ecommerce that brings the stock depending on the demand.
+It provides a new way to check the on_holds orders in an easy and simple way, specially designed for 
+those eCommerce that brings the stock to the shop depending on the demand.
+
+To use it just write the mail direction you want to deliver the mail and push the send button. 
 
 == Installation ==
 
@@ -30,6 +32,13 @@ those ecommerce that brings the stock depending on the demand.
 
 * WooCommerce 2.2 or later
 * WordPress 3.8 or later
+
+== Screenshots ==
+
+1. Admin Waepp menu. Write the recipient and send the mail with the pending orders indexed.
+2. Mail inbox picture. This is the list of pending orders that needs to be treated.
+The first column is the name of the product, the second one is the variation attributes ( only if they exists ),
+and the the last one that shows the number of items of that product that has been bought in the eCommerce.
 
 == Frequently Asked Questions ==
 
@@ -48,5 +57,3 @@ Ordered list:
 
 1. receive a mail with all the products that must be treated/processed
 2. the mail show the quantity of each processable product you need to bring to the store
-
-

@@ -206,7 +206,7 @@ $waepp_credit = "
 																		echo '</big></tt></th>';
 																	}
 																?>
-																<th scope="col" style="<?php echo $waepp_title_wrapper; ?>"><tt><big><?php echo _e( 'Quantity' , 'waepp' );?></big></tt></th>
+																<th scope="col" style="<?php echo $waepp_title_wrapper; ?>"><tt><big><?php echo _e( 'Amount' , 'waepp' );?></big></tt></th>
 															</tr>
 															<?php 
 																foreach ( $order->products as $prod_id=>$qty )	{
