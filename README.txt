@@ -51,6 +51,11 @@ and the the last one that shows the number of items of that product that has bee
 = 1.0 =
 *born of plugin*
 
+== Upgrade Notice ==
+
+= 1.0.0 =
+	initial update
+
 == A brief Markdown Example ==
 
 Ordered list:
