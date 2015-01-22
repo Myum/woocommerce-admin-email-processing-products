@@ -1,7 +1,7 @@
 <?php
 /**
  * @package woocommerce-admin-email-processing-products
- * @version 1.0.0
+ * @version 1.1.2
  * @author Myum
  */
 /*
@@ -9,7 +9,7 @@ Plugin Name: woocommerce admin email processing products
 Plugin URI: https://github.com/Myum/woocommerce-admin-email-processing-products
 Description: Sends an email with the pending orders and the amount of each item.
 Author: Marc Muixi
-Version: 1.0.0
+Version: 1.1.2
 Author URI: http://myum.cat
 Text Domain: waepp
 Domain Path: /languages

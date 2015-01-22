@@ -64,14 +64,14 @@ class Waepp_Admin {
 	 */	
 	function waepp_settings()	{
 		if ( !current_user_can( 'manage_options' ) )  {	
-			wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+			wp_die( __( 'You do not have sufficient permissions to access this page.' , 'waepp' ) );
 		}
 		/**
 		 * as this plugin is an extension of WooCommerce
 		 * it can't work without it
 		 */
 		if ( !class_exists( 'WooCommerce' ) )	{	
-			_e( 'this plugin is an extension of WooCommerce, so you must first install WooCommerce' , $this->plugin_name );
+			_e( 'this plugin is an extension of WooCommerce, so you must first install WooCommerce' , 'waepp' );
 			die;
 		}
 		$hidden_field_name = 'waepp_submit_hidden';
@@ -99,15 +99,15 @@ class Waepp_Admin {
 			}
 				?>			
 			<h2>Woocommerce admin email processing products</h2><br>
-			<p><big><b>Waepp</b></big><?php _e( ' - Designed to improve the management of your e-commerce stock.' );?><br>
-							<?php _e( 'This tool allows you to receive an email with the summary of the active orders that needs to be managed.' );?><br>
+			<p><big><b>Waepp</b></big><?php _e( ' - Designed to improve the management of your e-commerce stock.' , 'waepp' );?><br>
+							<?php _e( 'This tool allows you to receive an email with the summary of the active orders that needs to be managed.' , 'waepp');?><br>
 			</p>
 			<br><hr><br>
 			<form name="waepp_admin_form" method="post" action="">
 				<input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
 				<label for="mailreceiver" style="font-size: 14px;color:#222;font-weight: 600;"><?php _e( 'Mail receiver: ' , 'waepp' );?></label><input name="mailreceiver" type="email" id="mailreceiver" value="<?php echo esc_attr(get_option( 'admin_email' ));?>" class="regular-text ltr">
 				<p class="submit">
-					<input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e( 'send mail' , $this->plugin_name) ?>" />
+					<input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e( 'send mail' , 'waepp') ?>" />
 				</p>
 			</form>
 		</div>
